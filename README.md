@@ -14,3 +14,4 @@ https://react.vlpt.us/
     - 구조분해 할당 복습하자
     - defaultProps: props값이 지정되지 않았을때 기본값 설정
     - 하나의 컴포넌트 태그사이의 컴포넌트가 보여지기위해서는 props.children 을 렌더링해주어야
+6. 조건부 렌더링 : AND연산자, 삼항연산자 이용

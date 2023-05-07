@@ -10,13 +10,17 @@ import React from 'react';
 
 
 // 구조분해 할당 적용
-function Hello({color, name}) {
-  return <div
-    style={{ 
+function Hello({color, name, isSpecial}) {
+  return <div style={{ 
       // color: color
       color
-    }}
-  >안녕하세요{name}</div>;
+    }}>
+    {/* 양자택일의 경우는 삼항연산자 이용  */}
+    {/* {isSpecial ? <b>스페셜</b> : 안스페셜} */} 
+    {/* 보여줄지 말지는 && 연산자 이용 */}
+    {isSpecial && <b>*</b>}
+    안녕하세요{name}
+  </div>;
 }
 
 // props값이 지정되지 않았을때 기본값 설정
