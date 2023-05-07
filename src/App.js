@@ -1,23 +1,14 @@
 import React from 'react';
-import Hello from './Hello'; // 현재경로 ./ 표시해주기
-import './App.css';
+import Hello from './Hello';
+import Wrapper from './Wrapper';
 
 function App() {
-  const name = 'react';
-  const style = {
-    fontSize : 24 // 기본단위는 px
-  };
-
   return (
-    <>
-      {/* 주석은 이렇게 */}
-      <Hello 
-        // 주석은 이렇게
-      />
-      <div style={style}>{name}</div>
-      <div className="gray-box"></div>
-    </>
-  );
+    <Wrapper>
+      <Hello name="react" color="red" />
+      <Hello color="pink" />
+    </Wrapper>
+  )
 }
 
 export default App;
