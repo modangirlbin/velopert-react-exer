@@ -15,3 +15,16 @@ https://react.vlpt.us/
     - defaultProps: props값이 지정되지 않았을때 기본값 설정
     - 하나의 컴포넌트 태그사이의 컴포넌트가 보여지기위해서는 props.children 을 렌더링해주어야
 6. 조건부 렌더링 : AND연산자, 삼항연산자 이용
+7. useState 를 통해 컴포넌트에서 바뀌는 값 관리하기
+    ```javascript
+      // number 초기값(현재상태)은 0, 바꿔주는(업데이트) 함수는 setNumber
+      const [number, setNumber] = useState(0);
+      // 1. 바꿀 다음상태(값) 바로넣기
+      const onIncrease = () => {
+        setNumber(number + 1);
+      }
+      // 2. 다음상태 업데이트 함수 넣기
+      const onDecrease = () => {
+        setNumber(prvNumber => prvNumber - 1);
+      }
+    ```
